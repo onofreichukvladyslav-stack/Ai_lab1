@@ -48,7 +48,4 @@ class task3(task3Template):
   @handle("drop_down_method", "change")
   def drop_down_method_change(self, **event_args):
     self.run_classification()
-    
-
   
-    

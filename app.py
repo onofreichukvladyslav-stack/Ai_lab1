@@ -2,10 +2,11 @@ import io
 import json
 from datetime import datetime
 import math
+from pathlib import Path
+
 import anvil.media
 import anvil.server
 from PIL import Image, ImageDraw, ImageOps
-from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -14,6 +15,7 @@ TASK2_DIR = BASE_DIR / "task2"
 TASK3_DIR = BASE_DIR / "task3"
 
 anvil.server.connect("server_W3KM6HL2BXISEBRLW7QTRGBN-CRMD5XCQMGANZSO6")
+
 
 def extract_vector(img_bytes, rows=10, cols=10):
     rows = int(rows)
